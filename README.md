@@ -1,4 +1,4 @@
-#Introduction:
+# Introduction:
 It is a Advance Level of Tracking tool. Track
 Phone number location,Ip Address location and 
 track mac address location. And gather website info
@@ -23,5 +23,6 @@ And download YouTube videos with youtube downloader.
 **python tracksploit.py**
 
 # Thanks to:
-Vinay,Rokuru Hamasaki,Pratap,Folorunsho Muiz,
-varun,SaLaw,Prudhvi,yogesh,Raj Kumar
+**Vinay**,**Rokuru Hamasaki**,**Pratap**,
+**Folorunsho Muiz**,**varun**,**SaLaw**,
+**Prudhvi**,**yogesh**,**Raj Kumar**
