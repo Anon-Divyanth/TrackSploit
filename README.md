@@ -23,6 +23,6 @@ And download YouTube videos with youtube downloader.
 **python tracksploit.py**
 
 # Thanks to:
-**Vinay**,**Rokuru Hamasaki**,**Pratap**,
+**Vinay**,**Rokuro Hamasaki**,**Pratap**,
 **Folorunsho Muiz**,**varun**,**SaLaw**,
 **Prudhvi**,**yogesh**,**Raj Kumar**
