@@ -1,4 +1,4 @@
-# Introduction:
+#Introduction:
 It is a Advance Level of Tracking tool. Track
 Phone number location,Ip Address location and 
 track mac address location. And gather website info
@@ -10,7 +10,7 @@ Packets with Tracerote, and generate "52" types
 of hashes. And mainly gather YouTube video information
 And download YouTube videos with youtube downloader.
 
-# Installation:
+#Installation:
 
 **pkg install python**
 
@@ -23,4 +23,5 @@ And download YouTube videos with youtube downloader.
 **python tracksploit.py**
 
 # Thanks to:
- **Vinay**,**Rokuru Hamasaki**,**Pratap**,**Folorunsho Muiz**,**varun**,**Prudhvi**,**yogesh**,**Raj Kumar**
+Vinay,Rokuru Hamasaki,Pratap,Folorunsho Muiz,
+varun,SaLaw,Prudhvi,yogesh,Raj Kumar
