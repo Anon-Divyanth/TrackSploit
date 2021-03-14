@@ -11,7 +11,7 @@ of hashes. And mainly gather YouTube video information
 And download YouTube videos with youtube downloader.
 
 # Installation:
-
+```
 **pkg install python**
 
 **git clone https://github.com/Anon-Divyanth/TrackSploit**
@@ -21,6 +21,9 @@ And download YouTube videos with youtube downloader.
 **bash install.sh**
 
 **python tracksploit.py**
+```
+#ScreenShot:
+![alt text](https://github.com/Anon-Divyanth/TrackSploit/blob/main/core/Screenshot_2021_0314_190541-01.jpeg)
 
 # Thanks to:
 **Vinay**,**Rokuro Hamasaki**,**Pratap**,
