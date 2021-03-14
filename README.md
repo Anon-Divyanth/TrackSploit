@@ -12,15 +12,11 @@ And download YouTube videos with youtube downloader.
 
 # Installation:
 ```
-**pkg install python**
-
-**git clone https://github.com/Anon-Divyanth/TrackSploit**
-
-**cd TrackSploit**
-
-**bash install.sh**
-
-**python tracksploit.py**
+pkg install python
+git clone https://github.com/Anon-Divyanth/TrackSploit
+cd TrackSploit
+bash install.sh
+python tracksploit.py
 ```
 #ScreenShot:
 ![alt text](https://github.com/Anon-Divyanth/TrackSploit/blob/main/core/Screenshot_2021_0314_190541-01.jpeg)
