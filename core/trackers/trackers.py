@@ -99,69 +99,80 @@ def ipaddress():
     ip = input("{} [🌟]{} Ip Address = {}".format(R,B,W))
   except KeyboardInterrupt:
     exit()
-  req = requests.get("https://whatismyipaddress.com/ip/{}".format(ip)).content
-  soup = BeautifulSoup(req,"html.parser")
-  td = soup.find_all("td")
+  req=requests.get("https://ipgeolocation.io/ip-location/"+ip).content
   req2 = requests.get("https://ipapi.co/{}".format(ip)).content
+  soup = BeautifulSoup(req,"html.parser")
   soup2 = BeautifulSoup(req2,"html.parser")
+  span = soup.find_all("span",class_="ip-info-right")
   table = soup2.find("table")
-  td2 = table.find_all("td",class_="ipval")
+  td = table.find_all("td",class_="ipval")
 
   c=0
-  for i in td:
-   c+=1
-   if c in (1,20):
-     print("\n{} [{}*{}]{} Ip Address = {}".format(R,G,R,G,W)+i.text)
-   if c in (2,20):
-     print("{} [{}*{}]{} Decimal = {}".format(R,G,R,G,W)+i.text)
-   if c in (3,20):
-     print("{} [{}*{}]{} Hostname = {}".format(R,G,R,G,W)+i.text)
-   if c in (4,20):
-     print("{} [{}*{}]{} ASN = {}".format(R,G,R,G,W)+i.text)
-   if c in (5,20):
-     print("{} [{}*{}]{} ISN = {}".format(R,G,R,G,W)+i.text)
-   if c in (6,20):
-     print("{} [{}*{}]{} Orginzation= {}".format(R,G,R,G,W)+i.text)
-   if c in (7,20):
-     print("{} [{}*{}]{} Services= {}".format(R,G,R,G,W)+i.text)
-   if c in (8,20):
-     print("{} [{}*{}]{} Type = {}".format(R,G,R,G,W)+i.text)
-   if c in (9,20):
-     print("{} [{}*{}]{} Assignment = {}".format(R,G,R,G,W)+i.text)
-   if c in (11,20):
-     print("{} [{}*{}]{} Continent  = {}".format(R,G,R,G,W)+i.text)
-   if c in (12,20):
-     print("{} [{}*{}]{} Country = {}".format(R,G,R,G,W)+i.text)
-   if c in (13,20):
-     print("{} [{}*{}]{} State/Region = {}".format(R,G,R,G,W)+i.text)
-   if c in (14,20):
-     print("{} [{}*{}]{} Location = {}".format(R,G,R,G,W)+i.text)
-     c=0
-     for i in td2:
-       c+=1
-       if c in (5,20):
-         print("{} [{}*{}]{} Postal Code = {}".format(R,G,R,G,W)+i.text)
-       if c in (6,20):
-         print("{} [{}*{}]{} Europen Union = {}".format(R,G,R,G,W)+i.text)
-       if c in (7,20):
-         print("{} [{}*{}]{} Latitude/Longitude = {}".format(R,G,R,G,W)+i.text)
-       if c in (9,20):
-         print("{} [{}*{}]{} Calling Code =  {}".format(R,G,R,G,W)+i.text)
-       if c in (10,20):
-         print("{} [{}*{}]{} Currency = {}".format(R,G,R,G,W)+i.text)
-       if c in (11,20):
-
-         print("{} [{}*{}]{} Languages = {}".format(R,G,R,G,W)+i.text)
-         req = requests.get("https://ipapi.co/{}".format(ip)).content
-         soup = BeautifulSoup(req,"html.parser")
-         table = soup.find("table")
-         td = table.find_all("td",class_="ipval")
-         c=0
-         for i in td:
-           c+=1
-           if c in (7,20):
-            print("{} [{}*{}]{} Google Maps = {}http://www.google.com/maps/place/".format(R,G,R,G,W)+i.text)
-
+  for i in span:
+    c+=1
+    if c in (3,40):
+      print(" {} [{}*{}]{} IP Address = {}".format(R,G,R,G,W)+i.text)
+    if c in (4,40):
+      print(" {} [{}*{}]{} Hostname = {}".format(R,G,R,G,W)+i.text)
+    if c in (5,40):
+      print(" {} [{}*{}]{} Continent Code = {}".format(R,G,R,G,W)+i.text)
+    if c in (6,40):
+      print(" {} [{}*{}]{} Continent Name = {}".format(R,G,R,G,W)+i.text)
+    if c in (8,40):
+      print(" {} [{}*{}]{} Country Code = {}".format(R,G,R,G,W)+i.text)
+    if c in (9,40):
+      print(" {} [{}*{}]{} Country Name = {}".format(R,G,R,G,W)+i.text)
+    if c in (10,40):
+      print(" {} [{}*{}]{} Country Capital = {}".format(R,G,R,G,W)+i.text)
+    if c in (11,40):
+      print(" {} [{}*{}]{} State = {}".format(R,G,R,G,W)+i.text)
+    if c in (12,40):
+      print(" {} [{}*{}]{} District = {}".format(R,G,R,G,W)+i.text)
+    if c in (13,40):
+      print(" {} [{}*{}]{} Location = {}".format(R,G,R,G,W)+i.text)
+    if c in (14,40):
+      print(" {} [{}*{}]{} Zip Code = {}".format(R,G,R,G,W)+i.text);
+    if c in (15,40):
+      print(" {} [{}*{}]{} Latitude = {}".format(R,G,R,G,W)+i.text)
+    if c in (16,40):
+      print(" {} [{}*{}]{} Longitude = {}".format(R,G,R,G,W)+i.text)
+    if c in (17,40):
+      print(" {} [{}*{}]{} European Union = {}".format(R,G,R,G,W)+i.text)
+    if c in (18,40):
+      print(" {} [{}*{}]{} Calling Code = {}".format(R,G,R,G,W)+i.text)
+    if c in (19,40):
+      print(" {} [{}*{}]{} Country TLD = {}".format(R,G,R,G,W)+i.text)
+    if c in (20,40):
+      print(" {} [{}*{}]{} Languages = {}".format(R,G,R,G,W)+i.text)
+    if c in (22,40):
+      print(" {} [{}*{}]{} ISP = {}".format(R,G,R,G,W)+i.text)
+    if c in (24,40):
+      print(" {} [{}*{}]{} Organization = {}".format(R,G,R,G,W)+i.text)
+    if c in (25,40):
+      print(" {} [{}*{}]{} AS Number = {}".format(R,G,R,G,W)+i.text)
+    if c in (26,40):
+      print(" {} [{}*{}]{} Geoname ID = {}".format(R,G,R,G,W)+i.text)
+    if c in (27,40):
+      print(" {} [{}*{}]{} Currency = {}".format(R,G,R,G,W)+i.text)
+    if c in (28,40):
+      print(" {} [{}*{}]{} Currency Code = {}".format(R,G,R,G,W)+i.text)
+    if c in (29,40):
+      print(" {} [{}*{}]{} Currency Symbol = {}".format(R,G,R,G,W)+i.text)
+    if c in (30,40):
+      print(" {} [{}*{}]{} Timezone = {}".format(R,G,R,G,W)+i.text)
+    if c in (31,40):
+      print(" {} [{}*{}]{} Timezone Offet = {}".format(R,G,R,G,W)+i.text)
+    if c in (32,40):
+      print(" {} [{}*{}]{} Current Time = {}".format(R,G,R,G,W)+i.text)
+    if c in (33,40):
+      print(" {} [{}*{}]{} Current Time Unix = {}".format(R,G,R,G,W)+i.text)
+    if c in (34,40):
+      print(" {} [{}*{}]{} DST = {}".format(R,G,R,G,W)+i.text)
+      c=0
+      for a in td:
+        c+=1
+        if c in (7,50):
+          print(" {} [{}*{}]{} Google Maps = {}http://www.google.com/maps/place/".format(R,G,R,G,W)+a.text)
 
 def macaddress():
    try:
