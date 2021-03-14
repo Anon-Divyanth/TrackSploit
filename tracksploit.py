@@ -18,14 +18,6 @@ C = "\033[1;36m"
 W = "\033[1;37m"
 O = "\033[0m"
 
-def checknet():
-  try:
-    requests.get("https://github.com")
-  except Exception:
-    print("\033[1;31m [!] Check your internet\033[0m")
-    exit()
-checknet()
-
 def restart():
      x = input("\n \033[1;31m[🌟]\033[1;37m Return to menu [y/n] = ")
      if x == "y" or x == "Y":
