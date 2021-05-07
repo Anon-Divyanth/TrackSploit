@@ -23,5 +23,5 @@ python tracksploit.py
 
 # Thanks to:
 **Vinay**,**Rokuro Hamasaki**,**Pratap**,
-**Folorunsho Muiz**,**varun**,**SaLaw**,
+**Joyson Buya**,**Folorunsho Muiz**,**varun**,**SaLaw**,
 **Prudhvi**,**yogesh**,**Raj Kumar**
